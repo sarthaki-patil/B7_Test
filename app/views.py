@@ -74,3 +74,6 @@ def logout_user(request):
     return redirect("login_user")
 
 
+def my_view(request):
+    name = "meena"
+    return HttpResponse(f"Hello {name}...How are you")
