@@ -73,4 +73,7 @@ def logout_user(request):
     messages.info(request,"You have Succcssfully log out..!!")
     return redirect("login_user")
 
+#----------------------------------------------------------------------------------------
 
+def index(request):
+    return HttpResponse("Hello world..welcome to Index page...")
