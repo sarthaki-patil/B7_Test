@@ -1,0 +1,14 @@
+{% extends 'base.html' %} 
+{% block content %}
+{% load crispy_forms_tags %}
+   
+    
+        <h1> Add Employee Here</h1>
+        <form method = "post">
+            {% csrf_token %} 
+            {{employee_form| crispy}}
+            <button class="btn btn-primary" type = "submit"> Create </button>
+        </form>
+        
+        <a href ="{% url 'logout_user'%}"><button class="btn btn-danger"> LOGOUT </button></a>
+{% endblock%}

@@ -1,0 +1,48 @@
+cookies :-(client side)
+       --  small piece of information stored inside client(brower)for perticular time period
+       -- A cookie can have an expiry date and time after which it automatically gets removed. 
+       -- cookie information get added to the request
+       --Cookies, technically called HTTP Cookies are small text files which are created and maintained 
+         by your browser on the particular request of Web-Server.
+
+##  HTTP is a stateless protocol.-- e previous tutorial, HTTP is a stateless protocol, where every request made is always new to the server.
+
+## How do Cookies work?
+      -- Cookies work like other HTTP requests over the Internet.
+      -- When browser makes a request to the server then server then sends the response along with some cookies,
+           which may contain some login information or some other data.
+      -- When the browser makes a new request, the cookie generated previously is also transmitted to the server.
+      --This process is repeated every time a new request is made by the browser.
+      -- The browser repeats the process until the cookie expires or the session is closed and the cookie is deleted by the browser itself.
+      -- the cookie applies in all sorts of tasks, like when your login to a website or when shopping online on the web. 
+      -- Google AdSense and Google Analytics can also track you using the cookies they generate. 
+
+
+
+
+cookie method -- Django providesbuilt in method to set,update,fetch and delete cookies
+
+    1] set_cookie('cookie_name','cookie_value')
+    2] get('cookie_name')
+    3] delete_cookies('cookie_name')
+
+#---------------------------------------------------------------------------------------------------
+Django Sessions :- (server side)
+     -- The session is a semi-permanent and two-way communication between the server and the browser.
+     -- Here semi means that session will exist until the user logs out or closes the browser. 
+
+     --jango.contrib.sessions is an application which works on middleware.SessionMiddleware and is convenient to work.
+     --The middleware.SessionMiddleware is responsible for generating your unique Session IDs.
+     --You will also require django.contrib.sessions application, if you want to store your sessions on the database.
+
+
+
+
+
+
+
+
+
+
+
+
