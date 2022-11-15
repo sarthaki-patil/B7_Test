@@ -73,7 +73,11 @@ def logout_user(request):
     messages.info(request,"You have Succcssfully log out..!!")
     return redirect("login_user")
 
+#----------------------------------------------------------------------------------------
 
 def my_view(request):
     name = "meena"
     return HttpResponse(f"Hello {name}...How are you")
+    
+def index(request):
+    return HttpResponse("Hello world..welcome to Index page...")
