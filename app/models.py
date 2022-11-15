@@ -28,3 +28,15 @@ class Company(models.Model):
 
     def __str__(self):
         return f"{self.name} -- {self.owner_name}"
+
+class Person(models.Model):
+    name = models.CharField(max_length = 255)
+    address = models.CharField(max_length = 255)
+    email = models.EmailField()
+    mobile = models.IntegerField()
+
+    class Meta:
+        db_table = "person"
+
+    def __str__(self):
+        return self.name
