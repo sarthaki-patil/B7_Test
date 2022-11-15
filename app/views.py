@@ -81,3 +81,8 @@ def my_view(request):
     
 def index(request):
     return HttpResponse("Hello world..welcome to Index page...")
+
+
+def fun_1():
+    name = "ABC"
+    return name
